@@ -3,7 +3,7 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to your default branch if it's not 'main'
+      - main 
 
 jobs:
   build-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.12.4'  # Adjust the Python version as needed
+          python-version: '3.12.4'  
 
       - name: Install dependencies
         run: |
